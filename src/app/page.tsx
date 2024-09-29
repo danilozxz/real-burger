@@ -5,11 +5,26 @@ import hero from '/public/assets/hero.png';
 import { Pesquisa } from "@/components/Pesquisa";
 import { burgerList } from "./data/burgerList";
 import { BurgerCard } from "@/components/BurgerCard";
+import { useState } from "react";
+import { Modal } from "@/components/Modal";
+import { Burger } from "@/types/Burger";
 
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
+  const [burgerOfModal, setBurgerOfModal] = useState<Burger | undefined>();
 
-  const handleModal = () => {
-    
+
+  const handleModal = (id: number) => {
+    const burger = burgerList.find(item => item.id == id);
+
+    if (burger) {
+      setBurgerOfModal(burger);
+      setShowModal(true);
+    }
+  }
+
+  const closeModal = () => {
+    setShowModal(false);
   }
 
   return (
@@ -55,11 +70,16 @@ export default function Home() {
             <BurgerCard
               key={item.id}
               burger={item}
-              onClick={handleModal}
+              onClick={() => handleModal(item.id)}
             />
           ))
         }
       </div>
+
+      {showModal && burgerOfModal &&(
+        <Modal burger={burgerOfModal} closeModal={closeModal} />
+      )
+      }
     </div>
   );
 }

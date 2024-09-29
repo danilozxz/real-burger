@@ -11,7 +11,7 @@ export const BurgerCard = ({ burger, onClick }: Prop) => {
             <div onClick={onClick} className="cursor-pointer">
 
                 <div className="bg-[#2B2B2B] pt-8 px-6 rounded-t-md">
-                    <img src={`${burger.url}`} alt={burger.nome} className="w-40 mx-auto" />
+                    <img src={burger.url} alt={burger.nome} className="w-40 mx-auto" />
                 </div>
 
                 <div className="bg-[#1F1F1F] -mt-8 py-8 px-6 rounded-b-md">
