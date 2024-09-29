@@ -53,7 +53,7 @@ export default function Home() {
 
       <section className="hero flex flex-col xl:flex-row mt-12 px-4 xl:px-60 gap-12">
         <div className="xl:flex-1 text-center xl:text-start xl:pb-20">
-          <h1 className="text-5xl xl:text-5xl mt-12 leading-[74px] font-bold">O hambúrguer mais delicioso</h1>
+          <h1 className="text-4xl xl:text-5xl mt-12 leading-[74px] font-bold">O hambúrguer mais delicioso</h1>
           <p className="my-10">A primeira hamburgueria virtual que você faz o pedido online e come o burger através do computador.</p>
           <button className="bg-[#FA6A0F] px-12 py-2 rounded-md hover:bg-[#ff8800] transition-all">Fazer pedido</button>
         </div>
