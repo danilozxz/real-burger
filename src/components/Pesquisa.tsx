@@ -2,7 +2,7 @@ import { Search, ChevronDown } from 'lucide-react'
 
 export const Pesquisa = () => {
     return (
-        <section className="bg-[#1F1F1F] px-4 lg:px-60 py-20 -mt-20">
+        <section className="bg-[#1F1F1F] px-4 lg:px-40 xl:px-60 py-20 -mt-20">
 
             <h2 className="text-center text-3xl mb-12 xl:text-start xl:w-80">Pesquise o seu hamburguer favorito!</h2>
 

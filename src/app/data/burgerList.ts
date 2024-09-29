@@ -3,34 +3,74 @@ import { Burger } from "@/types/Burger";
 export const burgerList: Burger[] = [
     {
         id: 1,
-        url: '/public/assets/burgers/burger1.png',
+        url: '/assets/burgers/burger1.png',
         categoria: 'Tradicional',
-        Nome: 'Texas Burger',
-        Preco: 25.50,
-        Ingredientes: ["Adicionar ingredientes"]
+        nome: 'Texas Burger',
+        preco: 25.50,
+        ingredientes: ["Adicionar ingredientes"]
     },
     {
         id: 2,
-        url: '/public/assets/burgers/burger2.png',
+        url: '/assets/burgers/burger2.png',
         categoria: 'Tradicional',
-        Nome: 'Texas Burger',
-        Preco: 25.50,
-        Ingredientes: ["Adicionar ingredientes"]
+        nome: 'Texas Burger',
+        preco: 25.50,
+        ingredientes: ["Adicionar ingredientes"]
     },
     {
         id: 3,
-        url: '/public/assets/burgers/burger3.png',
+        url: '/assets/burgers/burger3.png',
         categoria: 'Tradicional',
-        Nome: 'Texas Burger',
-        Preco: 25.50,
-        Ingredientes: ["Adicionar ingredientes"]
+        nome: 'Texas Burger',
+        preco: 25.50,
+        ingredientes: ["Adicionar ingredientes"]
     },
     {
         id: 4,
-        url: '/public/assets/burgers/burger4.png',
+        url: '/assets/burgers/burger4.png',
         categoria: 'Tradicional',
-        Nome: 'Texas Burger',
-        Preco: 25.50,
-        Ingredientes: ["Adicionar ingredientes"]
+        nome: 'Texas Burger',
+        preco: 25.50,
+        ingredientes: ["Adicionar ingredientes"]
+    },
+    {
+        id: 5,
+        url: '/assets/burgers/burger1.png',
+        categoria: 'Tradicional',
+        nome: 'Texas Burger',
+        preco: 25.50,
+        ingredientes: ["Adicionar ingredientes"]
+    },
+    {
+        id: 6,
+        url: '/assets/burgers/burger2.png',
+        categoria: 'Tradicional',
+        nome: 'Texas Burger',
+        preco: 25.50,
+        ingredientes: ["Adicionar ingredientes"]
+    },
+    {
+        id: 7,
+        url: '/assets/burgers/burger3.png',
+        categoria: 'Tradicional',
+        nome: 'Texas Burger',
+        preco: 25.50,
+        ingredientes: ["Adicionar ingredientes"]
+    },
+    {
+        id: 8,
+        url: '/assets/burgers/burger4.png',
+        categoria: 'Tradicional',
+        nome: 'Texas Burger',
+        preco: 25.50,
+        ingredientes: ["Adicionar ingredientes"]
+    },
+    {
+        id: 9,
+        url: '/assets/burgers/burger1.png',
+        categoria: 'Tradicional',
+        nome: 'Texas Burger',
+        preco: 25.50,
+        ingredientes: ["Adicionar ingredientes"]
     },
 ]
