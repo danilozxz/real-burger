@@ -77,7 +77,7 @@ export default function Home() {
       </div>
 
       {showModal && burgerOfModal &&(
-        <Modal burger={burgerOfModal} closeModal={closeModal} />
+        <Modal burger={burgerOfModal} closeModal={closeModal} handleModal={handleModal}/>
       )
       }
     </div>
