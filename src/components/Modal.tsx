@@ -17,9 +17,10 @@ export const Modal = ({ burger, closeModal, handleModal }: Props) => {
                         key={burger.id}
                         burger={burger}
                         onClick={() => handleModal(burger.id)}
+                        modal={true}
                     />
                 </div>
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-col justify-around">
                     <div>
                         <p className="font-bold">Ingredientes</p>
                         <p className="text-[#979797]">{burger.ingredientes}</p>

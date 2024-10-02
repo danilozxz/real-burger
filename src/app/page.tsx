@@ -71,6 +71,7 @@ export default function Home() {
               key={item.id}
               burger={item}
               onClick={() => handleModal(item.id)}
+              modal={false}
             />
           ))
         }
