@@ -1,6 +1,5 @@
-import { burgerList } from "@/app/data/burgerList";
 import { Burger } from "@/types/Burger";
-import { X } from 'lucide-react';
+import { X, ShoppingCart } from 'lucide-react';
 import { BurgerCard } from "./BurgerCard";
 
 type Props = {
@@ -20,16 +19,17 @@ export const Modal = ({ burger, closeModal, handleModal }: Props) => {
                         onClick={() => handleModal(burger.id)}
                     />
                 </div>
-                <div>
+                <div className="flex flex-col justify-between">
                     <div>
                         <p className="font-bold">Ingredientes</p>
                         <p className="text-[#979797]">{burger.ingredientes}</p>
                     </div>
 
-                    <div>
-                        <p className="font-bold">Observações:</p>
-                        <textarea name="" id="" className="bg-[#1F1F1F] border-2 border-[#2B2B2B] outline-none p-4 rounded-lg" placeholder="Digite aqui"></textarea>
+                    <div className="">
+                        <p className="font-bold mb-2">Observações:</p>
+                        <textarea name="" id="" className="bg-[#1F1F1F] outline-none p-4 rounded-lg w-full" placeholder="Digite aqui"></textarea>
                     </div>
+                    <button className="bg-[#FA6A0F] px-12 py-2 rounded-md hover:bg-[#ff8800] transition-all flex items-center gap-4">Adicionar ao carrinho <ShoppingCart/></button>
                 </div>
                 <X onClick={closeModal} className="absolute top-5 right-5 w-10 h-10 cursor-pointer text-white text-5xl" />
             </div>
