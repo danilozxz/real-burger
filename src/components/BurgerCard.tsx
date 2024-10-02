@@ -32,7 +32,7 @@ export const BurgerCard = ({ burger, onClick, modal }: Prop) => {
                 <div className="bg-[#1F1F1F] -mt-8 py-8 px-6 rounded-b-md">
                     <p className="text-sm mt-4">{burger.categoria}</p>
                     <p className="text-2xl font-bold mt-2">{burger.nome}</p>
-                    <div className="flex items-center justify-between mt-3">
+                    <div className="flex items-center justify-between mt-3 gap-4">
                         <span className="text-[#FE6A0F] text-2xl font-bold">R${(burger.preco * count).toFixed(2)}</span>
                         {modal ? (
                             <div className="flex gap-4 items-center">
