@@ -30,7 +30,9 @@ export const Modal = ({ burger, closeModal, handleModal }: Props) => {
                         <p className="font-bold mb-2">Observações:</p>
                         <textarea name="" id="" className="bg-[#1F1F1F] outline-none p-4 rounded-lg w-full" placeholder="Digite aqui"></textarea>
                     </div>
+
                     <button className="bg-[#FA6A0F] px-12 py-2 rounded-md hover:bg-[#ff8800] transition-all">Adicionar ao carrinho</button>
+
                 </div>
                 <X onClick={closeModal} className="absolute top-2 right-2 w-10 h-10 md:top-5 md:right-5 cursor-pointer text-white text-5xl" />
             </div>

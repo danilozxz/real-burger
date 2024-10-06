@@ -42,7 +42,9 @@ export default function Home() {
               <li className="hover:text-[#FE6A0F] transition-all"><a href="#">Burgers</a></li>
               <li className="hover:text-[#FE6A0F] transition-all"><a href="#">Contato</a></li>
             </ul>
-            <ShoppingCart className="hidden lg:block size-8 cursor-pointer hover:text-[#FE6A0F] transition-all" />
+            <a href="/carrinho">
+              <ShoppingCart className="hidden lg:block size-8 cursor-pointer hover:text-[#FE6A0F] transition-all" />
+            </a>
           </nav>
 
         </div>
@@ -77,8 +79,8 @@ export default function Home() {
         }
       </div>
 
-      {showModal && burgerOfModal &&(
-        <Modal burger={burgerOfModal} closeModal={closeModal} handleModal={handleModal}/>
+      {showModal && burgerOfModal && (
+        <Modal burger={burgerOfModal} closeModal={closeModal} handleModal={handleModal} />
       )
       }
     </div>
