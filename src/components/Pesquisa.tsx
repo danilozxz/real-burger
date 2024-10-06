@@ -1,6 +1,9 @@
 import { Search, ChevronDown } from 'lucide-react'
+import { useState } from 'react'
 
 export const Pesquisa = () => {
+    const [selectedOption, setSelectedOption] = useState("");
+
     return (
         <section className="bg-[#1F1F1F] px-4 lg:px-40 xl:px-60 py-20 -mt-20">
 
@@ -18,8 +21,14 @@ export const Pesquisa = () => {
                 </div>
 
                 <div className='w-full p-4 bg-[#2B2B2B] rounded-md flex justify-center'>
-                    <select id="categoria" name="categoria" className="bg-transparent outline-none cursor-pointer appearance-none flex-1">
-                        <option value="" disabled selected hidden>Selecionar categoria</option>
+                    <select 
+                    id="categoria" 
+                    name="categoria" 
+                    className="bg-transparent outline-none cursor-pointer appearance-none flex-1"
+                    value={selectedOption}
+                    onChange={(e) => setSelectedOption(e.target.value)}
+                    >
+                        <option value="" disabled hidden>Selecionar categoria</option>
                         <option value="opcao1">Opção 1</option>
                         <option value="opcao2">Opção 2</option>
                         <option value="opcao3">Opção 3</option>
