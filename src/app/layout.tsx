@@ -34,12 +34,12 @@ export default function RootLayout({
 
             <div className="flex items-center gap-4 w-full lg:gap-28">
               <div>
-                <a href="#" className="text-3xl lg:text-4xl">Real<span className="text-[#FE6A0F]">•</span>Burguer</a>
+                <a href="/" className="text-3xl lg:text-4xl">Real<span className="text-[#FE6A0F]">•</span>Burguer</a>
               </div>
 
               <nav className="flex flex-1 items-center">
                 <ul className="hidden lg:flex flex-1 gap-16">
-                  <li className="hover:text-[#FE6A0F] transition-all"><a href="#">Início</a></li>
+                  <li className="hover:text-[#FE6A0F] transition-all"><a href="/">Início</a></li>
                   <li className="hover:text-[#FE6A0F] transition-all"><a href="#">Burgers</a></li>
                   <li className="hover:text-[#FE6A0F] transition-all"><a href="#">Contato</a></li>
                 </ul>
