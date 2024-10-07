@@ -14,7 +14,7 @@ export const InserirEndereco = ({ openAddressModal, address }: Props) => {
             <div className="flex">
                 <button type='button' onClick={openAddressModal} className='flex items-center gap-2 flex-1'>
                    
-                    {address.clientName} {address.phoneNumber}
+                    <p ><span className="font-bold">{address.clientName} {address.phoneNumber}</span> {address.street} {address.number} {address.neighborhood} {address.city} {address.cep}</p>
                 </button>
 
                 <div className='w-px h-6 bg-zinc-800' />

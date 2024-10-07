@@ -6,7 +6,7 @@ import { InserirEndereco } from './InserirEndereco';
 import { Address } from '@/types/pagamento/Address';
 
 const Page = () => {
-    const [address, setAddress] = useState<Address>({clientName: '', phoneNumber: ''});
+    const [address, setAddress] = useState<Address>({clientName: '', phoneNumber: '', street: '', number: '', cep: '' ,neighborhood: '',city: '',  complement: '' });
     const [isAddressModalOpen, setIsAddressModalOpen] = useState(false);
 
     const openAddressModal = () => {
@@ -22,15 +22,27 @@ const Page = () => {
         const data = new FormData(event.currentTarget);
         const clientName = data.get('clientName')?.toString();
         const phoneNumber = data.get('phoneNumber')?.toString();
+        const street = data.get('street')?.toString();
+        const number = data.get('number')?.toString();
+        const cep = data.get('cep')?.toString();
+        const neighborhood = data.get('neighborhood')?.toString();
+        const cityAndState = data.get('cityAndState')?.toString();
+        const complement = data.get('complement')?.toString();
     
-        if (!clientName || !phoneNumber) {
+        if (!clientName || !phoneNumber || !street || !number || !cep || !neighborhood || !cityAndState || !complement) {
             return;
         }
     
         setAddress((prevAddress) => ({
             ...prevAddress,
             clientName: clientName,
-            phoneNumber: phoneNumber
+            phoneNumber: phoneNumber,
+            street: street,
+            number: number,
+            cep: cep,
+            neighborhood: neighborhood,
+            cityAndState: cityAndState,
+            complement: complement
         }));
     
         event.currentTarget.reset();

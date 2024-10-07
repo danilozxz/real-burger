@@ -41,6 +41,48 @@ export const Modal = ({ closeAddressModal, addAddress }: Props) => {
                         />
                     </div>
 
+                    <input
+                        type="text"
+                        name='cep'
+                        placeholder="CEP"
+                        className="bg-[#1F1F1F] p-2.5 border border-zinc-800 rounded-lg text-lg placeholder-zinc-400 outline-none flex-1"
+                    />
+
+                    <input
+                        type="text"
+                        name='cityAndState'
+                        placeholder="Cidade - Estado"
+                        className="bg-[#1F1F1F] p-2.5 border border-zinc-800 rounded-lg text-lg placeholder-zinc-400 outline-none flex-1"
+                    />
+                    <input
+                        type="text"
+                        name='neighborhood'
+                        placeholder="Bairro"
+                        className="bg-[#1F1F1F] p-2.5 border border-zinc-800 rounded-lg text-lg placeholder-zinc-400 outline-none flex-1"
+                    />
+
+                    <div className="flex gap-4">
+                        <input
+                            type="text"
+                            name='street'
+                            placeholder="Rua / Avenida"
+                            className="bg-[#1F1F1F] p-2.5 border border-zinc-800 rounded-lg text-lg placeholder-zinc-400 outline-none flex-1"
+                        />
+                        <input
+                            type="text"
+                            name='number'
+                            placeholder="Número"
+                            className="bg-[#1F1F1F] p-2.5 border border-zinc-800 rounded-lg text-lg placeholder-zinc-400 outline-none"
+                        />
+                    </div>
+
+                    <input
+                        type="text"
+                        name='complement'
+                        placeholder="Complemento"
+                        className="bg-[#1F1F1F] p-2.5 border border-zinc-800 rounded-lg text-lg placeholder-zinc-400 outline-none flex-1"
+                    />
+
                     <button type="submit">Enviar</button>
                 </form>
             </div>
