@@ -6,7 +6,18 @@ import { InserirEndereco } from './InserirEndereco';
 import { Address } from '@/types/pagamento/Address';
 
 const Page = () => {
-    const [address, setAddress] = useState<Address>({clientName: '', phoneNumber: '', street: '', number: '', cep: '' ,neighborhood: '',city: '',  complement: '' });
+    const [address, setAddress] = useState<Address>(
+        {
+            clientName: '', 
+            phoneNumber: '', 
+            street: '', 
+            number: '', 
+            cep: '',
+            neighborhood: '',
+            city: '',  
+            complement: '' }
+    );
+    
     const [isAddressModalOpen, setIsAddressModalOpen] = useState(false);
 
     const openAddressModal = () => {
