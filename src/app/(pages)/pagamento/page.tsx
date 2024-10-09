@@ -1,9 +1,10 @@
 "use client"
 
 import { FormEvent, useEffect, useState } from 'react';
-import { Modal } from './Modal';
-import { InserirEndereco } from './InserirEndereco';
+import { Modal } from './endereco/Modal';
+import { InserirEndereco } from './endereco/InserirEndereco';
 import { Address } from '@/types/pagamento/Address';
+import { Itens } from './formaDePagamento/Itens';
 
 const Page = () => {
     const [address, setAddress] = useState<Address>(
@@ -76,6 +77,8 @@ const Page = () => {
                     address={address}
                     openAddressModal={openAddressModal}
                 />
+                
+                <Itens/>
             </div>
 
             {isAddressModalOpen && (
