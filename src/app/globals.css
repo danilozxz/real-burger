@@ -16,3 +16,16 @@
 .animate-fadeIn {
     animation: fadeIn 0.3s ease-in-out forwards;
 }
+
+
+/* Remover setas do input de número */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
