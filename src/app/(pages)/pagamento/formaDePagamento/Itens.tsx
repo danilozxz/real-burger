@@ -9,23 +9,28 @@ import { FormPix } from './formCards/FormPix';
 
 export const Itens = () => {
     const cards = [
-        {id: 1, card: <CartaoDeCredito/>, conteudo: <FormCartao/>},
-        {id: 2, card: <Dinheiro/>, conteudo: <FormDinheiro/>},
-        {id: 3, card: <Pix/>, conteudo: <FormPix/>},
+        { id: 1, card: <CartaoDeCredito />, conteudo: <FormCartao /> },
+        { id: 2, card: <Dinheiro />, conteudo: <FormDinheiro /> },
+        { id: 3, card: <Pix />, conteudo: <FormPix /> },
     ]
 
     const [activeBoxId, setActiveBoxId] = useState<number | null>(null);
 
     const handleBoxClick = (id: number) => {
-      setActiveBoxId(activeBoxId === id ? null : id);
+        setActiveBoxId(activeBoxId === id ? null : id);
     };
     return (
-        <div className="mt-6 text-[#FA6A0F]">
+        <div className="mt-6">
             <h2 className="text-lg">Forma de pagamento</h2>
-            <div className='mt-8 grid grid-cols-3 gap-2 justify-between'>
-                
-            {cards.map((card) => (
-                    <div key={card.id} onClick={() => handleBoxClick(card.id)}>
+            <div className='mt-2 grid grid-cols-3 gap-2 justify-between'>
+
+                {cards.map((card) => (
+                    <div
+                        key={card.id}
+                        onClick={() => handleBoxClick(card.id)}
+                        className={`${activeBoxId === card.id ? 'border rounded-md text-green-500 border-green-500 shadow-lg' : 'border-gray-300'
+                            }`}
+                    >
                         {card.card}
                     </div>
                 ))}
