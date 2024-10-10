@@ -12,7 +12,7 @@ interface Props {
 export const Modal = ({ closeAddressModal, addAddress }: Props) => {
     return (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center transition-opacity duration-300 ease-in-out">
-            <div className="w-[640px] rounded-xl py-5 px-6 shadow-shape bg-[#272727] space-y-5 transform transition-transform duration-300 ease-in-out scale-100 opacity-0 translate-y-10 animate-fadeIn">
+            <div className="w-[320px] md:w-[640px] rounded-xl py-5 px-6 shadow-shape bg-[#272727] space-y-5 transform transition-transform duration-300 ease-in-out scale-100 opacity-0 translate-y-10 animate-fadeIn">
                 <div className="space-y-2">
                     <div className="flex items-center justify-between">
                         <h2 className="text-lg font-semibold">Adicionar endereço</h2>
@@ -26,7 +26,7 @@ export const Modal = ({ closeAddressModal, addAddress }: Props) => {
                 </div>
 
                 <form onSubmit={addAddress} className="flex flex-col gap-4">
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <input
                             type="text"
                             name="clientName"
@@ -61,7 +61,7 @@ export const Modal = ({ closeAddressModal, addAddress }: Props) => {
                         className="bg-[#1F1F1F] p-2.5 border border-zinc-800 rounded-lg text-lg placeholder-zinc-400 outline-none flex-1"
                     />
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <input
                             type="text"
                             name="street"

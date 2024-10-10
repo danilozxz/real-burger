@@ -71,7 +71,7 @@ const Page = () => {
 
     return (
         <div className="w-full px-4 md:px-0 md:w-[700px] xl:w-[800px] mx-auto">
-            <div className="bg-[#272727] p-4 md:p-8 lg:p-12 rounded-lg mt-12">
+            <div className="bg-[#272727] p-2 md:p-8 lg:p-12 rounded-lg mt-12">
 
                 <InserirEndereco
                     address={address}

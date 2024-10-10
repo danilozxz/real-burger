@@ -22,7 +22,7 @@ export const Itens = () => {
     return (
         <div className="mt-6 text-[#FA6A0F]">
             <h2 className="text-lg">Forma de pagamento</h2>
-            <div className='mt-8 flex justify-between'>
+            <div className='mt-8 grid grid-cols-3 gap-2 justify-between'>
                 
             {cards.map((card) => (
                     <div key={card.id} onClick={() => handleBoxClick(card.id)}>
