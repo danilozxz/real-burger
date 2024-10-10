@@ -14,7 +14,7 @@ export const Itens = () => {
         { id: 3, card: <Pix />, conteudo: <FormPix /> },
     ]
 
-    const [activeBoxId, setActiveBoxId] = useState<number | null>(null);
+    const [activeBoxId, setActiveBoxId] = useState<number | null>(1);
 
     const handleBoxClick = (id: number) => {
         setActiveBoxId(activeBoxId === id ? null : id);
