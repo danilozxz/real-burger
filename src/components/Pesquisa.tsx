@@ -24,16 +24,16 @@ export const Pesquisa = () => {
                     <select 
                     id="categoria" 
                     name="categoria" 
-                    className="bg-transparent outline-none cursor-pointer appearance-none flex-1"
+                    className="bg-[#2B2B2B] outline-none cursor-pointer  flex-1"
                     value={selectedOption}
                     onChange={(e) => setSelectedOption(e.target.value)}
                     >
                         <option value="" disabled hidden>Selecionar categoria</option>
-                        <option value="opcao1">Opção 1</option>
-                        <option value="opcao2">Opção 2</option>
-                        <option value="opcao3">Opção 3</option>
+                        <option value="opcao1">Tradicional</option>
+                        <option value="opcao2">Artesanal</option>
+                        <option value="opcao3">Vegano</option>
                     </select>
-                    <ChevronDown className='size-8' />
+                    {/* <ChevronDown className='size-8' /> */}
                 </div>
             </div>
 
