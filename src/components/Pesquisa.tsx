@@ -1,7 +1,11 @@
 import { Search, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 
-export const Pesquisa = () => {
+type props = {
+    setFilterText: (text: string) => void
+}
+
+export const Pesquisa = ({ setFilterText }: props) => {
     const [selectedOption, setSelectedOption] = useState("");
 
     return (
@@ -17,16 +21,17 @@ export const Pesquisa = () => {
                         type="text"
                         placeholder="Digite o nome do burguer"
                         className='bg-transparent outline-none w-4/5'
+                        onChange={(e) => setFilterText(e.target.value)}
                     />
                 </div>
 
                 <div className='w-full p-4 bg-[#2B2B2B] rounded-md flex justify-center'>
-                    <select 
-                    id="categoria" 
-                    name="categoria" 
-                    className="bg-[#2B2B2B] outline-none cursor-pointer  flex-1"
-                    value={selectedOption}
-                    onChange={(e) => setSelectedOption(e.target.value)}
+                    <select
+                        id="categoria"
+                        name="categoria"
+                        className="bg-[#2B2B2B] outline-none cursor-pointer flex-1"
+                        value={selectedOption}
+                        onChange={(e) => setSelectedOption(e.target.value)}
                     >
                         <option value="" disabled hidden>Selecionar categoria</option>
                         <option value="opcao1">Tradicional</option>

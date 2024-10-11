@@ -27,6 +27,10 @@ export default function Home() {
     setShowModal(false);
   }
 
+  const [filterText, setFilterText] = useState("");
+
+  const filter = burgerList.filter(item => item.nome.toLowerCase().includes(filterText.toLowerCase()));
+
   return (
     <div>
 
@@ -41,11 +45,11 @@ export default function Home() {
         </div>
       </section>
 
-      <Pesquisa />
+      <Pesquisa setFilterText={setFilterText}/>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 lg:px-40 xl:px-60 my-12 items-center">
         {
-          burgerList.map(item => (
+          filter.map(item => (
             <BurgerCard
               key={item.id}
               burger={item}
