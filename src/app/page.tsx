@@ -38,7 +38,7 @@ export default function Home() {
         <div className="xl:flex-1 text-center xl:text-start xl:pb-20">
           <h1 className="text-4xl xl:text-5xl mt-12 leading-[74px] font-bold">O hambúrguer mais delicioso</h1>
           <p className="my-10">A primeira hamburgueria virtual que você faz o pedido online e come o burger através do computador.</p>
-          <button className="bg-[#FA6A0F] px-12 py-2 rounded-md hover:bg-[#ff8800] transition-all">Fazer pedido</button>
+          <a href="#menu" className="bg-[#FA6A0F] px-12 py-2 rounded-md hover:bg-[#ff8800] transition-all">Fazer pedido</a>
         </div>
         <div className="xl:flex-1 ">
           <img src={hero.src} alt="hamburguer" className="w-72 xl:w-96 mx-auto" />
@@ -47,7 +47,7 @@ export default function Home() {
 
       <Pesquisa setFilterText={setFilterText}/>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 lg:px-40 xl:px-60 my-12 items-center">
+      <div id="menu" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 lg:px-40 xl:px-60 my-12 items-center">
         {
           filter.map(item => (
             <BurgerCard

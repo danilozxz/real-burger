@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth scroll-p-80">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#141414]`}
       >
@@ -40,7 +40,7 @@ export default function RootLayout({
               <nav className="flex flex-1 items-center">
                 <ul className="hidden lg:flex flex-1 gap-16">
                   <li className="hover:text-[#FE6A0F] transition-all"><a href="/">Início</a></li>
-                  <li className="hover:text-[#FE6A0F] transition-all"><a href="#">Burgers</a></li>
+                  <li className="hover:text-[#FE6A0F] transition-all"><a href="#menu">Burgers</a></li>
                   <li className="hover:text-[#FE6A0F] transition-all"><a href="#">Contato</a></li>
                 </ul>
                 <a href="/carrinho">
