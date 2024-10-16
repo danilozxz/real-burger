@@ -34,7 +34,7 @@ export default function RootLayout({
 
             <div className="flex items-center gap-4 w-full lg:gap-28">
               <div>
-                <a href="/" className="text-3xl lg:text-4xl">Real<span className="text-[#FE6A0F]">•</span>Burguer</a>
+                <a href="/" className="text-3xl lg:text-4xl">Real<span className="text-[#FE6A0F]">•</span>Burger</a>
               </div>
 
               <nav className="flex flex-1 items-center">
