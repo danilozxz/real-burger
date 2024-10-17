@@ -22,8 +22,7 @@ export const BurgerCard = ({ burger, onClick, modal }: Prop) => {
     }
 
     return (
-        <section className="">
-            <div onClick={onClick} className="cursor-pointer transition-transform transform hover:scale-105">
+            <div onClick={onClick} className="cursor-pointer transition-transform transform hover:scale-105 w-64 mx-auto md:w-auto md:mx-0">
 
                 <div className="bg-[#2B2B2B] pt-8 px-6 rounded-t-md">
                     <img src={burger.url} alt={burger.nome} className="w-40 mx-auto" />
@@ -50,6 +49,5 @@ export const BurgerCard = ({ burger, onClick, modal }: Prop) => {
                 </div>
 
             </div>
-        </section>
     )
 }
