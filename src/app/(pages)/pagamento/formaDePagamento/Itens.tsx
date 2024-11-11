@@ -20,7 +20,7 @@ export const Itens = () => {
         setActiveBoxId(activeBoxId === id ? null : id);
     };
     return (
-        <div className="mt-6">
+        <div className="mt-6 flex flex-col">
             <h2 className="text-lg">Forma de pagamento</h2>
             <div className='mt-2 grid grid-cols-3 gap-2 justify-between'>
 
@@ -40,6 +40,8 @@ export const Itens = () => {
                     {cards.find(card => card.id === activeBoxId)?.conteudo}
                 </div>
             )}
+
+            <a href="#" className="mt-4 bg-[#FA6A0F] text-center text-white py-2 px-4 rounded">Finalizar pedido</a>
         </div>
     )
 }
