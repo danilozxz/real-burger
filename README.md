@@ -1,2 +1,2 @@
-## Real Burger
+## Real Burger front-end
 
